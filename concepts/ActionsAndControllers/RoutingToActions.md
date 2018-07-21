@@ -9,7 +9,7 @@ To bind a route to an action in the `config/routes.js` file, you can use the HTT
 For example, the following manual route will cause your app to trigger the `make` action in `api/controllers/SandwichController.js` whenever it receives a POST request to `/make/a/sandwich`:
 
 ```js
-  'POST /make/a/sandwich': 'SandwichController.make'
+  'POST /make/a/sandwich': 'Sandwich/make'
 ```
 
 If you&rsquo;re using standalone actions, so that you had an `api/controllers/sandwich/make.js` file, a more intuitive syntax exists which uses the path to the action (relative to `api/controllers`):
